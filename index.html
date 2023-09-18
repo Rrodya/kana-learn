@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500;6..12,600;6..12,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./style.css">
+	<title>Kana learn</title>
+</head>
+<body>
+	<header class="header container">
+		<div class="header-setting">
+			<div class="monographs">
+				<input type="checkbox" id="monographs">
+				<label class="monographs__label" for="monographs">
+					<p>MONOGRAPHS ONLY</p>
+				</label>
+			</div>
+			</label>
+			<div class="switch-kana-block">
+				<p class="switch__hiragana active__kana">Hiragana</p>
+				<input type="checkbox" id="switch-kana">
+				<label class="switch-kana__label" for="switch-kana"></label>
+				<p class="switch__katakana">Katakana</p>
+			</div>
+		</div>
+		<p class="go-help">HELP</p>
+
+	</header>
+	<main class="main container">
+		<div class="hiragana-symbol">
+			<p class="hiragana-symbol__result hiragana-symbol__incorrect">Incorrect!</p>
+			<p class="hiragana-symbol__result hiragana-symbol__correct">Correct!</p>
+			<div class="char" id="kana_char"></div>
+			<form class="hiragana-symbol-form">
+				<input type="text" id="kana-input" class="hiragana__input" autofocus maxlength="3" required="required" autocomplete="off">
+				<input type="submit" class="hiragana__submit">
+			</form>
+		</div>
+	</main>
+	<footer class="container footer">
+		<p class="counter">0/3</p>
+		<p class="reference">Reference by <a href="http://hiragana.training/">Hiragana App</a></p>
+		<p class="created">by <a href="https://github.com/Rrodya" target="_blank">Rodion Tiunov</a></p>
+	</footer>
+	<script type="module" src="./script.js"></script>
+</body>
+</html>
